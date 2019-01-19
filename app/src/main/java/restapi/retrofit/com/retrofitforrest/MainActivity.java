@@ -43,10 +43,10 @@ public class MainActivity extends AppCompatActivity {
         call.enqueue(new Callback<List<Photo>>() {
             @Override
             public void onResponse(Call<List<Photo>> call, Response<List<Photo>> response) {
-                int statusCode = response.code();
-                List<Photo> photos = response.body();
-                init(photos);
-                System.out.println("==3333");
+              //  int statusCode = response.code();
+              //  List<Photo> photos = response.body();
+               // init(photos);
+                System.out.println(response.body());
                 //Log.d("ttt","111111111111"+statusCode);
               //  Log.d("tag",photos.toString());
 
